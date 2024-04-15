@@ -1,20 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/header.astro';
-import Nav from '../components/nav.astro';
-import Footer from '../components/footer.astro';
+import ProductosDestacados from '../components/productos-destacados.astro';
+import Promocion from '../components/promocion.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<header>
-		<Nav />
-		<Header/>
-	</header>
 	<main>
 	<section>
+		<Promocion/>
+		<ProductosDestacados/>
 	</section>
 	</main>
-	<Footer/>
 </Layout>
 
 
