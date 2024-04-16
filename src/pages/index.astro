@@ -2,14 +2,16 @@
 import Layout from '../layouts/Layout.astro';
 import ProductosDestacados from '../components/productos-destacados.astro';
 import Promocion from '../components/promocion.astro';
+import Carrusel from '../components/carrusel.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-	<section>
-		<Promocion/>
+	<section class="min-h-screen">
+		<Carrusel/>
 		<ProductosDestacados/>
 	</section>
+	<Promocion/>
 	</main>
 </Layout>
 
