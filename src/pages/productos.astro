@@ -1,0 +1,165 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Eclipse muebles">
+    <!-- Contenido de tu Layout -->
+    <div id="overlay" style="display: none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;"></div> 
+    <!--Oscurecer el fondo cuando se habre el filtro-->
+    <div id="overlay-filtro" style="display: none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;"></div> 
+    
+    <!--Lo acomoda aca porque si no se crashea con el div container-->
+    <div id="filtros" class="filtros">
+        <button id="boton-atras-filtro"><i class="bi bi-arrow-left"></i></button>
+        <ul id="lista-filtros">
+            <li><button id="Mesa-comedor" class="botones-filtro">Mesas de comedor</button></li>
+            <li><button id="islas" class="botones-filtro">Barra/islas</button></li>
+            <li><button id="tablas-de-asado" class="botones-filtro">Tablas de asado</button></li>
+            <li><button id="rack-tv" class="botones-filtro">Racks</button></li>
+            <li><button id="Todos" class="botones-filtro">Todos los productos</button></li>
+        </ul> <!-- Agregado -->
+    </div>
+    <div class="items-center m-4">
+        <main>
+            <div class="header-lista-productos">
+                <h2 class="TITULO-PRINCIPAL">Productos</h2>
+                <button id="boton-filtro" class="boton-despliega-aside"><i class="bi bi-filter-right"></i></button>
+            </div>
+            <div id="contenedor-productos" class="productos">
+                <!-- Esto se va a rellenar con JS -->
+                <!-- Repite el div para cada producto -->
+            </div>
+            <div id="contenedor-productos-seleccionados" class="contenedor-productos-seleccionados"></div>
+        </main>
+    </div>
+    
+    
+    <style>
+        
+        .filtros {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 45%;
+            height: 100vh;
+            background-color: rgb(0, 0, 0);
+            color: #ffffff;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            transition: transform 0.3s ease-in-out;
+            z-index: 9;
+        }
+        .filtros.show {
+            display: block;
+        }
+        
+        .filtros li {
+            justify-content: center;
+            display: block;
+            margin-bottom: 40px;
+            gap: 25%;
+            border-bottom: 1px solid var(--dorado); 
+            padding: 10px 0; 
+        }
+        
+        .filtros li:hover {
+            color: var(--dorado); 
+        }
+        
+        .bi .bi-filter-right{
+            font-size: 1.5rem;
+            color: #ffffff;
+        }
+        .bi-filter-right{
+            color: #ffffff;
+        }
+        
+        </style>
+<script>
+    // En la página de la lista de productos
+    const contenedorProductos = document.getElementById('contenedor-productos');
+    
+    // Estoy cargando los productos de forma dinámica a través de un archivo JSON
+    if (contenedorProductos) {
+        function cargarProductos() {
+            fetch('/productos.json')
+            .then(response => response.json())
+            .then(productos => {
+                productos.forEach(producto => {
+                    contenedorProductos.innerHTML += `
+                    <button  data-categoria="${producto.categoria.nombre}" class="producto" onclick="location.href='/overview?id=${producto.id}'">
+                        <div>
+                            <img src="${producto.imagen.principal}" alt="${producto.titulo}" />
+                            <h3 class="titulo-producto">${producto.titulo}</h3>
+                            </div>
+                            </button>
+                            `;
+                        });
+                    })
+                    .catch(error => console.error('Error:', error));
+                }
+                
+                
+                // Función para cargar los productos
+                cargarProductos();
+} else {
+    console.error('Elemento contenedorProductos no encontrado');
+}
+</script>
+
+
+<script>
+    // Abrir filtro
+    const abrirFiltro = document.getElementById('boton-filtro');
+    const Filtros = document.getElementById('filtros');
+    
+    abrirFiltro.addEventListener('click', function() {
+        Filtros.classList.toggle('show');
+        document.getElementById('overlay-filtro').style.display = Filtros.classList.contains('show') ? 'block' : 'none';
+    });
+    
+    // Cerrar filtro
+    const botonParaAtrasProductosFiltro = document.getElementById('boton-atras-filtro');
+    
+    botonParaAtrasProductosFiltro.addEventListener('click', function() {
+        Filtros.classList.remove('show');
+        document.getElementById('overlay-filtro').style.display = 'none';
+    });
+    
+    // Funcion filtrar
+    
+    // Selecciona todos los botones de filtro
+    const botonesFiltro = document.querySelectorAll('.botones-filtro');
+    
+    botonesFiltro.forEach(boton => {
+        boton.addEventListener('click', () => {
+            const categoria = boton.id;
+            
+            // Selecciona todos los divs de los productos
+            const productos = document.querySelectorAll('.producto');
+            
+            // Itera sobre los productos y cambia su estilo de visualización en función de la categoría seleccionada
+            productos.forEach(producto => {
+                const categoriaProducto = producto.dataset.categoria; // Obtener la categoría del producto desde su dataset
+                if (categoria === 'Todos' || categoria === categoriaProducto) {
+                    producto.style.display = 'block'; // Mostrar el producto
+                    Filtros.classList.remove('show');// Ocultar el aside filtro
+                    document.getElementById('overlay-filtro').style.display = 'none';// Ocultar el overlay
+                } else {
+                    producto.style.display = 'none'; // Ocultar el producto
+                    
+                }
+            });
+        });
+    });
+    
+    
+    
+    
+    
+    
+    
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</Layout>

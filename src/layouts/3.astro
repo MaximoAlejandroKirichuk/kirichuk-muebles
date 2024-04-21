@@ -1,0 +1,66 @@
+<style is:global>
+/*Mostrar productos overview*/
+#mostrarInformacionOverview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#mostrarInformacionOverview h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+}
+
+
+
+.parrafo-overview {
+    font-family: open sans;
+    font-size: 1em; 
+    color: #ffffff; 
+    line-height: 1.6; 
+    margin: 20px 0; 
+}
+.contenedor-botones {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.boton-consultar, .boton-seguir-comprando {
+    background-color:var(--primary-color); 
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.boton-consultar:hover, .boton-seguir-comprando:hover {
+    background-color:var(--primary-dark-color);
+    color: rgb(0, 0, 0);
+}
+
+.boton-consultar a, .boton-seguir-comprando a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.overviews-enlaces{
+    font-size: 20px;
+    margin: 20px;
+}
+.overviews-enlaces:hover{
+    transform: scale(1.1);
+}
+</style>

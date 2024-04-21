@@ -1,0 +1,226 @@
+[
+    {
+        "id": "MESA-X-GUAYUBIRA",
+        "titulo": "Mesa x guayubira",
+        "imagen": {
+            "principal": "/img/productos/mesas de comedor/estilo industrial/mesa-x-guayubira/mesa-guayubira.jpg",
+            "secundario": "/img/productos/mesas de comedor/estilo industrial/mesa-x-guayubira/mesa-guayubira-2.jpg.jpeg",
+            "tercero":"/img/productos/mesas de comedor/estilo industrial/mesa-x-guayubira/mesa-guayubira-3.jpg.jpeg.jpg"
+        },
+        "categoria": {
+            "nombre": "Mesa-comedor",
+            "estilo": "estilo-industrial"
+        },
+        "detalles": {
+            "texto-descripcion": "- Fabricada en madera maciza de Guayubira, de 2 pulgadas (aprox 4 cm de espesor). Pulida y laqueada con poliuretano importado interior. Opciones: mate, satinado o brillante.\n- Patas de caño estructural, pintadas con una capa de base antioxido gris, y laca nitro sintética en color negro o blanco semimate. Consultar por otros colores.\n- Opciones de caño: 60x30mm, 80x40mm, 80x80mm, 100x100mm. (La base de caño estructural está soldada en una sola pieza. No está atornillada en partes. No se desarma.)\n- Las patas de la mesa tienen topes afelpados para no rayar el piso.\n- Opcionales: Se puede agregar un regrueso de 2 cm aprox, para que la tapa se vea mas ancha, queda aprox de 6 cm. Consultar costo adicional.\n- Nota: En caso que la mesa sea para exterior debe aclararlo, porque utilizamos otra laca para exterior. Tiene un costo adicional.\n- Fabricamos en otras medidas, consulte si no encuentra la medida que está buscando en la publicación. La altura de la mesa estándar es de 76 cm de alto, aunque se puede personalizar.\n- Trabajamos también maderas macizas de Peteribi, Guatambu, Guayca, Eucalipto."
+        }
+    },
+    {
+        "id": "MESA-X-PETERIBI",
+        "titulo": "Mesa x peteribi",
+        "imagen":{
+            "principal":"/img/productos/mesas de comedor/estilo industrial/mesa-x-peteribi/mesa-x-peteribi-principal.jpeg.jpg",
+            "secundario":"/img/productos/mesas de comedor/estilo industrial/mesa-x-peteribi/mesa-x-peteribi-2.jpeg.jpg",
+            "tercero":"/img/productos/mesas de comedor/estilo industrial/mesa-x-peteribi/mesa-x-peteribi-3.jpeg"
+        },
+        "categoria": {
+            "nombre": "Mesa-comedor",
+            "estilo": "estilo-industrial"
+        },
+        "detalles": {
+            "texto-descripcion": "- Fabricada en madera maciza de Peteribi, de 2 pulgadas (aprox 4 cm de espesor). Pulida y laqueada con poliuretano importado interior. Opciones: mate, satinado o brillante.\n- Patas de caño estructural, pintadas con una capa de base antioxido gris, y laca nitro sintética en color negro o blanco semimate. Consultar por otros colores.\n- Opciones de caño: 60x30mm, 80x40mm, 80x80mm, 100x100mm. (La base de caño estructural está soldada en una sola pieza. No está atornillada en partes. No se desarma.)\n- Las patas de la mesa tienen topes afelpados para no rayar el piso.\n- Opcionales: Se puede agregar un regrueso de 2 cm aprox, para que la tapa se vea mas ancha, queda aprox de 6 cm. Consultar costo adicional.\n- Nota: En caso que la mesa sea para exterior debe aclararlo, porque utilizamos otra laca para exterior. Tiene un costo adicional.\n- Fabricamos en otras medidas, consulte si no encuentra la medida que está buscando en la publicación. La altura de la mesa estándar es de 76 cm de alto, aunque se puede personalizar.\n- Trabajamos también maderas macizas de Guayubira, Guatambu, Guayca, Eucalipto."
+        }
+    },    
+    {
+        "id": "MESA-X-GUATAMBU",
+        "titulo": "Mesa x guatambu",
+        "imagen":{
+            "principal":"/img/productos/mesas de comedor/estilo industrial/MESA-X-GUATAMBU/mesa-x-guatambu-principal.jpg",
+            "secundario":"/img/productos/mesas de comedor/estilo industrial/MESA-X-GUATAMBU/mesa-x-guatambu-2.jpg",
+            "tercero":"/img/productos/mesas de comedor/estilo industrial/MESA-X-GUATAMBU/mesa-x-guatambu-3.jpg"
+        },
+        "categoria": {
+            "nombre": "Mesa-comedor",
+            "estilo": "estilo-industrial"
+        },
+        "detalles": {
+            "texto-descripcion": "- Fabricada en madera maciza de Guatambu, de 2 pulgadas (aprox 4 cm de espesor). Pulida y laqueada con poliuretano importado interior. Opciones: mate, satinado o brillante.\n- Patas de caño estructural, pintadas con una capa de base antioxido gris, y laca nitro sintética en color negro o blanco semimate. Consultar por otros colores.\n- Opciones de caño: 60x30mm, 80x40mm, 80x80mm, 100x100mm. (La base de caño estructural está soldada en una sola pieza. No está atornillada en partes. No se desarma.)\n- Las patas de la mesa tienen topes afelpados para no rayar el piso.\n- Opcionales: Se puede agregar un regrueso de 2 cm aprox, para que la tapa se vea mas ancha, queda aprox de 6 cm. Consultar costo adicional.\n- Nota: En caso que la mesa sea para exterior debe aclararlo, porque utilizamos otra laca para exterior. Tiene un costo adicional.\n- Fabricamos en otras medidas, consulte si no encuentra la medida que está buscando en la publicación. La altura de la mesa estándar es de 76 cm de alto, aunque se puede personalizar.\n- Trabajamos también maderas macizas de Guayubira, Peteribi, Guayca, Eucalipto."
+        }
+    },
+    {
+        "id": "MESA.X-LAUREL-BREYO",
+        "titulo": "Mesa x laure breyo",
+        "imagen":{
+            "principal":"/img/productos/mesas de comedor/estilo industrial/mesa-x-laurel-brezo/mesa-x-laurel-brezo-principal.jpeg",
+            "secundario":"/img/productos/mesas de comedor/estilo industrial/mesa-x-laurel-brezo/mesa-x-laurel-brezo-2.jpeg",
+            "tercero":"/img/productos/mesas de comedor/estilo industrial/mesa-x-laurel-brezo/mesa-x-laurel-brezo-3.jpeg"
+        },
+        "categoria": {
+            "nombre": "Mesa-comedor",
+            "estilo": "estilo-industrial"
+        },
+        "detalles": {
+            "texto-descripcion": "- Fabricada en madera maciza de Guatambu, de 2 pulgadas (aprox 4 cm de espesor). Pulida y laqueada con poliuretano importado interior. Opciones: mate, satinado o brillante.\n- Patas de caño estructural, pintadas con una capa de base antioxido gris, y laca nitro sintética en color negro o blanco semimate. Consultar por otros colores.\n- Opciones de caño: 60x30mm, 80x40mm, 80x80mm, 100x100mm. (La base de caño estructural está soldada en una sola pieza. No está atornillada en partes. No se desarma.)\n- Las patas de la mesa tienen topes afelpados para no rayar el piso.\n- Opcionales: Se puede agregar un regrueso de 2 cm aproximadamente, para que la tapa se vea más ancha, quedando aproximadamente de 6 cm. Consultar costo adicional.\n- Nota: En caso de que la mesa sea para exterior, debe aclararlo, ya que utilizamos otra laca para exterior con un costo adicional.\n- Fabricamos en otras medidas, consulte si no encuentra la medida que está buscando en la publicación. La altura estándar de la mesa es de 76 cm de alto, aunque se puede personalizar.\n- Trabajamos también con maderas macizas de Guayubira, Peteribi, Guayca, Eucalipto. (El laurel Breyo es una madera que ocasionalmente no se encuentra disponible)"
+        }
+    },
+    {
+        "id": "MESA-X-MORA-AMARILLA",
+        "titulo": "Mesa x mora amarilla",
+        "imagen":{
+            "principal":"/img/productos/mesas de comedor/estilo industrial/mesa-x-mora-amarilla/mesa-x-mora-amarilla.-principal.jpg",
+            "secundario":"/img/productos/mesas de comedor/estilo industrial/mesa-x-mora-amarilla/mesa-x-mora-amarilla.-2.jpg",
+            "tercero":"/img/productos/mesas de comedor/estilo industrial/mesa-x-mora-amarilla/mesa-x-mora-amarilla.-3.jpg"
+        },
+        "categoria": {
+            "nombre": "Mesa-comedor",
+            "estilo": "estilo-industrial"
+        },
+        "detalles": {
+            "texto-descripcion": "- Fabricada en madera maciza de Guatambu, de 2 pulgadas (aprox 4 cm de espesor). Pulida y laqueada con poliuretano importado interior. Opciones: mate, satinado o brillante.\n- Patas de caño estructural, pintadas con una capa de base antioxido gris, y laca nitro sintética en color negro o blanco semimate. Consultar por otros colores.\n- Opciones de caño: 60x30mm, 80x40mm, 80x80mm, 100x100mm. (La base de caño estructural está soldada en una sola pieza. No está atornillada en partes. No se desarma.)\n- Las patas de la mesa tienen topes afelpados para no rayar el piso.\n- Opcionales: Se puede agregar un regrueso de 2 cm aproximadamente, para que la tapa se vea más ancha, quedando aproximadamente de 6 cm. Consultar costo adicional.\n- Nota: En caso de que la mesa sea para exterior, debe aclararlo, ya que utilizamos otra laca para exterior con un costo adicional.\n- Fabricamos en otras medidas, consulte si no encuentra la medida que está buscando en la publicación. La altura estándar de la mesa es de 76 cm de alto, aunque se puede personalizar.\n- Trabajamos también con maderas macizas de Guayubira, Peteribi, Guayca, Eucalipto. (La mora amarilla es una madera que ocasionalmente no se encuentra disponible)."
+        }
+    },
+    {
+        "id": "Mesas-tradicional-4-patas",
+        "titulo": "Mesa tradicional 4 patas",
+        "imagen":{
+            "principal":"/img/productos/mesas de comedor/estilo industrial/mesa-tradicional cedro/principal.jpeg",
+            "secundario":"/img/productos/mesas de comedor/estilo industrial/mesa-tradicional cedro/mesa-tradicional-cedro-2.jpeg",
+            "tercero":"/img/productos/mesas de comedor/estilo industrial/mesa-x-laurel-brezo/mesa-x-laurel-brezo-3.jpeg"
+        },
+        "categoria": {
+            "nombre": "Mesa-tradicional-4-patas",
+            "estilo": "estilo-industrial"
+        },
+        "detalles": {
+            "texto-descripcion": "- Fabricada en madera maciza de Cedro, de 2 pulgadas (aprox 4 cm de espesor). Pulida y laqueada con poliuretano importado interior. Opciones: mate, satinado o brillante.\n- Patas de caño estructural, pintadas con una capa de base antioxido gris, y laca nitro sintética en color negro o blanco semimate. Consultar por otros colores.\n- Opciones de caño: 60x30mm, 80x40mm, 80x80mm, 100x100mm. (La base de caño estructural está soldada en una sola pieza. No está atornillada en partes. No se desarma.)\n- Las patas de la mesa tienen topes afelpados para no rayar el piso.\n- Opcionales: Se puede agregar un regrueso de 2 cm aproximadamente, para que la tapa se vea más ancha, quedando aproximadamente de 6 cm. Consultar costo adicional.\n- Nota: En caso de que la mesa sea para exterior, debe aclararlo, ya que utilizamos otra laca para exterior con un costo adicional.\n- Fabricamos en otras medidas, consulte si no encuentra la medida que está buscando en la publicación. La altura estándar de la mesa es de 76 cm de alto, aunque se puede personalizar.\n- Trabajamos también con maderas macizas de Peteribi, Guayubira, Guatambu, Guayca, Eucalipto."
+        }
+    },
+    {
+        "id": "MESA-TRADICIONAL-GUAYCA",
+        "titulo": "Mesa tradicional 4 guayca",
+        "imagen":{
+            "principal":"/img/productos/mesas de comedor/estilo industrial/mesa-tradicional-guayca/mesa-tradicional guayca principal.jpg",
+            "secundario":"/img/productos/mesas de comedor/estilo industrial/mesa-tradicional-guayca/mesa-tradicional guayca principal 2.jpg",
+            "tercero":"/img/productos/mesas de comedor/estilo industrial/mesa-tradicional-guayca/mesa-tradicional guayca principal 3.jpg"
+        },
+        "categoria": {
+            "nombre": "Mesa-tradicional-4-guayca",
+            "estilo": "estilo-industrial"
+        },
+        "detalles": {
+            "texto-descripcion": "- Fabricada en madera maciza de Guayca, de 2 pulgadas (aprox 4 cm de espesor). Pulida y laqueada con poliuretano importado interior. Opciones: mate, satinado o brillante.\n- Patas de caño estructural, pintadas con una capa de base antioxido gris, y laca nitro sintética en color negro o blanco semimate. Consultar por otros colores.\n- Opciones de caño: 60x30mm, 80x40mm, 80x80mm, 100x100mm. (La base de caño estructural está soldada en una sola pieza. No está atornillada en partes. No se desarma.)\n- Las patas de la mesa tienen topes afelpados para no rayar el piso.\n- Opcionales: Se puede agregar un regrueso de 2 cm aproximadamente, para que la tapa se vea más ancha, quedando aproximadamente de 6 cm. Consultar costo adicional.\n- Nota: En caso de que la mesa sea para exterior, debe aclararlo, ya que utilizamos otra laca para exterior con un costo adicional.\n- Fabricamos en otras medidas, consulte si no encuentra la medida que está buscando en la publicación. La altura estándar de la mesa es de 76 cm de alto, aunque se puede personalizar.\n- Trabajamos también con maderas macizas de Guayubira, Peteribi, Guatambu, Guayca, Eucalipto."
+        }
+    },
+    {
+        "id": "MESA-REDONDA-CRUZ-PETERIBI",
+        "titulo": "Mesa redonda cruz peteribi",
+        "categoria": {
+            "nombre": "mesa-redonda-cruz",
+            "estilo": "todo-madera"
+        },
+        "imagen": {
+            "principal": "/img/productos/mesas de comedor/estilo industrial/mesa-x-laurel-brezo/mesa-x-laurel-brezo-principal.jpeg",
+            "secundario": "/img/productos/mesas de comedor/estilo industrial/mesa-x-laurel-brezo/mesa-x-laurel-brezo-2.jpeg",
+            "tercero": "/img/productos/mesas de comedor/estilo industrial/mesa-x-laurel-brezo/mesa-x-laurel-brezo-3.jpeg"
+        },
+        "detalles": {
+            "texto-descripcion": "-Fabricada en madera maciza de Peteribi, de 2 pulgadas (aprox 4 cm de espesor). Pulida y laqueada con poliuretano importado interior. Opciones: mate, satinado o brillante.\n-Patas de la misma madera maciza.\nOpcionales: Se puede agregar un regrueso de 2 cm aprox, para que la tapa se vea mas ancha, queda aprox de 6 cm. Consultar costo adicional.\n- Nota: En caso que la mesa sea para exterior debe aclararlo, porque utilizamos otra laca para exterior. Tiene un costo adicional.\n- Fabricamos en otras medidas, consulte si no encuentra la medida que está buscando en la publicación. La altura de la mesa estándar es de 76 cm de alto, aunque se puede personalizar.\n- Trabajamos también maderas macizas de Guayubira, Guayca, Guatambu, Eucalipto."
+        }
+    },
+    {
+        "id": "mesa-gervasoni-peteribi",
+        "titulo": "Mesa gervasoni peteribi",
+        "categoria": {
+            "nombre": "mesa-gervasoni-peteribi",
+            "estilo": "todo-madera"
+        },
+        "imagen": {
+            "principal": "/img/productos/mesas de comedor/todo madera/mesa redonda gervasoni/principal.jpg",
+            "secundario": "/img/productos/mesas de comedor/todo madera/mesa redonda gervasoni/2.jpg",
+            "tercero": "/img/productos/mesas de comedor/todo madera/mesa redonda gervasoni/3.jpg"
+        },
+        "detalles": {
+            "texto-descripcion": "-Fabricada en madera maciza de Peteribi, de 2 pulgadas (aprox 4 cm de espesor). Pulida y laqueada con poliuretano importado interior. Opciones: mate, satinado o brillante.\n-Patas de la misma madera maciza.\nOpcionales: Se puede agregar un regrueso de 2 cm aprox, para que la tapa se vea mas ancha, queda aprox de 6 cm. Consultar costo adicional.\n- Nota: En caso que la mesa sea para exterior debe aclararlo, porque utilizamos otra laca para exterior. Tiene un costo adicional.\n- Fabricamos en otras medidas, consulte si no encuentra la medida que está buscando en la publicación. La altura de la mesa estándar es de 76 cm de alto, aunque se puede personalizar.\n- Trabajamos también maderas macizas de Guayubira, Guayca, Guatambu, Eucalipto."
+        }
+    },
+    {
+        "id": "Rack-TV-Master",
+        "titulo": "Rack TV master",
+        "imagen": {
+            "principal": "/img/productos/rack tv/rack-tv-cajones/rack-tv-principal.jpeg",
+            "secundario": "/img/productos/rack tv/rack-tv-cajones/rack-tv-2.jpeg",
+            "tercero": "/img/productos/rack tv/rack-tv-cajones/rack-tv-3.jpeg"
+        },
+        "categoria": {
+            "nombre": "rack-tv",
+            "estilo": "con-cajones"
+        },
+        "detalles": {
+            "texto-descripcion": "- Medidas estándar: 150 cm de ancho x 40 cm de profundidad x 60 cm de alto\n- 3 cajones con guias telescópicas\n- Fabricado en madera maciza de Peteribi (NO ENCHAPADO), laqueado con poliuretano importado. Espesor 1 pulgada (aprox de 1,7 a 2 cm)\n- Caño estructural, medidas: 60 x 30mm x 1.2 mm / 80 x40 mmx 1.2 mm. Consultar por otras medidas. Base antioxido y laca nitrosintetica color negro o blanco semi mate.\n- Fabricamos a medida. Consultar por otras maderas: Guayubira, Guayca, Guatambu, Eucalipto, etc."
+        }
+    },
+    {
+        "id": "Rack-TV-Master-sin-cajones",
+        "titulo": "Rack TV master sin cajones",
+        "imagen": {
+            "principal": "/img/productos/rack tv/rack-tv-sin-cajon/rack-tv-principal.jpg",
+            "secundario": "/img/productos/rack tv/rack-tv-sin-cajon/rack-tv-2.jpg",
+            "tercero": "/img/productos/rack tv/rack-tv-sin-cajon/rack-tv-3.jpg"
+        },
+        "categoria": {
+            "nombre": "rack-tv",
+            "estilo": "sin-cajon"
+        },
+        "detalles": {
+            "texto-descripcion": "- Medidas estándar: 150 cm de ancho x 40 cm de profundidad x 60 cm de alto\n- Fabricado en madera maciza de Guayca (NO ENCHAPADO), laqueado con poliuretano importado. Espesor 1 pulgada (aprox de 1,7 a 2 cm).\n- Caño estructural, medidas: 60 x 30mm x 1.2 mm / 80 x40 mmx 1.2 mm. Consultar por otras medidas.  Base antioxido y laca nitrosintetica color negro o blanco semi mate.\n- Fabricamos a medida. Consultar por otras maderas: Guayubira, Peteribi, Guayca, Guatambu, Eucalipto, etc."
+        }
+    },
+    {
+        "id": "isla-barra-balcarce",
+        "titulo": "Isla barra-balcarce",
+        "imagen": {
+            "principal": "/img/productos/islas/isla-balcarce/isla-foto-principal.jpeg",
+            "secundario": "/img/productos/islas/isla-balcarce/isla-foto-2.jpeg",
+            "tercero": "/img/productos/islas/isla-balcarce/isla-foto-3.jpeg"
+        },
+        "categoria": {
+            "nombre": "islas",
+            "estilo": "isla-barra-balcarce"
+        },
+        "detalles": {
+            "texto-descripcion": "- Medidas: 140 cm de ancho x 60 cm de profundidad x 105 cm de alto\n- Tapa de madera maciza de Paraiso, 3 cm de espesor (1 ´ ½ pulgada), laqueada con poliuretano importado brillante.\n- Caño estructural 80 x 40mm. Base antioxido y laca nitrosintetica color negro semi mate.\n- 2 ruedas giratorias con frenos y 2 ruedas fijas.\n- 4 amplios estantes de guardado.\n- Bandeja lateral y frascos especieros.\n- Barral de caño lateral para su movilidad.\n- 4 ganchos en los laterales para utensillos, respasadores, etc.\n- Barral lateral para rollo de cocina.\n- Fabricamos a medida. Recuerde que puede personalizar la isla a su gusto."
+        }
+    },
+    {
+        "id": "isla-barra-areco",
+        "titulo": "Isla barra areco",
+        "imagen": {
+            "principal": "/img/productos/islas/isla-areco/isla-foto-principal.jpeg",
+            "secundario": "/img/productos/islas/isla-areco/isla-foto-2.jpeg",
+            "tercero": "/img/productos/islas/isla-areco/isla-foto-3.jpeg"
+        },
+        "categoria": {
+            "nombre": "islas",
+            "estilo": "isla-barra-areco"
+        },
+        "detalles": {
+            "texto-descripcion": "- Medidas: 150 cm de ancho x 50 cm de profundidad x 90 cm de alto\n- Tapa de madera maciza de Guayubira, 3 cm de espesor (1 ´ ½ pulgada), laqueada con poliuretano importado satinado.\n- Caño estructural 80 x 40mm. Base antioxido y laca nitrosintetica color negro semi mate.\n- 2 ruedas giratorias con frenos y 2 ruedas fijas.\n- 7 amplios estantes de guardado.\n- Bandeja lateral y frascos especieros.\n- Barral de caño lateral para su movilidad.\n- 4 ganchos en los laterales para utensillos, respasadores, etc.\n- Barral lateral para rollo de cocina.\n- Fabricamos a medida. Recuerde que puede personalizar la isla a su gusto."
+        }
+    },
+    {
+        "id":"tablas-de-asado-madera",
+        "titulo":"Tablas de asado",
+        "imagen":{
+            "principal":"/img/productos/tablas de asado/tablas-asado/principal.jpeg",
+            "secundario":"/img/productos/tablas de asado/tablas-asado/2.jpeg",
+            "tercero":"/img/productos/tablas de asado/tablas-asado/3.jpeg"
+        },
+        "categoria":{
+            "nombre":"tablas-de-asado",
+            "estilo":"todo-madera"
+        },
+        "detalles":{
+            "texto-descripcion":"Las tablas de asado son el complemento perfecto para cualquier experiencia culinaria al aire libre o en interiores. Hechas con madera de alta calidad, estas tablas no solo son funcionales, sino también estéticamente atractivas. Con un diseño robusto y duradero, estas tablas proporcionan una superficie estable para cortar y servir una variedad de alimentos, desde jugosas carnes asadas hasta deliciosas verduras a la parrilla. Su estilo todo en madera agrega un toque rústico y natural a cualquier mesa de cocina o área de barbacoa. Fabricadas con madera cuidadosamente seleccionada, estas tablas no solo son resistentes, sino también fáciles de limpiar y mantener. Su acabado suave garantiza que los alimentos se corten con precisión sin dañar la superficie de la tabla. Ya sea que estés organizando una reunión familiar, una fiesta con amigos o simplemente disfrutando de una comida tranquila en casa, las tablas de asado son la elección perfecta para realzar la presentación de tus platos y elevar tu experiencia gastronómica a nuevas alturas. Atrévete a incorporar el encanto y la funcionalidad de estas tablas en tus momentos culinarios más memorables."
+        }
+    }
+]
