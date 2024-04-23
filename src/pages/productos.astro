@@ -1,4 +1,5 @@
 ---
+
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="Eclipse muebles">
@@ -21,7 +22,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="items-center m-4">
         <main>
             <div class="header-lista-productos">
-                <h2 class="TITULO-PRINCIPAL">Productos</h2>
+                <h2 class="TITULO-PRINCIPAL text-white">Productos</h2>
                 <button id="boton-filtro" class="boton-despliega-aside"><i class="bi bi-filter-right"></i></button>
             </div>
             <div id="contenedor-productos" class="productos">
@@ -32,9 +33,19 @@ import Layout from '../layouts/Layout.astro';
         </main>
     </div>
     
+
+
+
+
+
+
+
+
+
+
+
     
     <style>
-        
         .filtros {
             display: none;
             position: fixed;
@@ -49,6 +60,7 @@ import Layout from '../layouts/Layout.astro';
             overflow-y: auto;
             transition: transform 0.3s ease-in-out;
             z-index: 9;
+            font-size: calc(75% + 0.5vw);
         }
         .filtros.show {
             display: block;

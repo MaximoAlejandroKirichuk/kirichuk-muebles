@@ -18,12 +18,16 @@
     text-align: center;
 }
 
-
+#mostrarInformacionOverview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
 .parrafo-overview {
     font-family: open sans;
     font-size: 1em; 
-    color: #ffffff; 
+    color: #333; 
     line-height: 1.6; 
     margin: 20px 0; 
 }
@@ -34,7 +38,7 @@
 }
 
 .boton-consultar, .boton-seguir-comprando {
-    background-color:var(--primary-color); 
+    background-color:white; 
     border: none;
     color: rgb(0, 0, 0);
     padding: 15px 32px;
@@ -48,17 +52,18 @@
 }
 
 .boton-consultar:hover, .boton-seguir-comprando:hover {
-    background-color:var(--primary-dark-color);
-    color: rgb(0, 0, 0);
+    background-color:rgb(59, 59, 59);
+    color: var(--dorado);
 }
 
 .boton-consultar a, .boton-seguir-comprando a {
-    color: rgb(0, 0, 0);
+    color: rgb(59, 59, 59);
     text-decoration: none;
 }
 .overviews-enlaces{
     font-size: 20px;
-    margin: 20px;
+    padding-top: 20px;
+    margin: 10px;
 }
 .overviews-enlaces:hover{
     transform: scale(1.1);
