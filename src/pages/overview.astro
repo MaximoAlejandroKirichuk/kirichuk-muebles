@@ -1,13 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Subpaginas from "../layouts/subpaginas.astro";
 import OverviewStyles from "../layouts/overview-styles.astro";
+
 ---
 <Layout title="Eclipse">
-        <div id="overlay" style="display: none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 2;"></div> 
-		
-		<div class="">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		<div class="items-center">
             
-            <a class="overviews-enlaces" href="/index">Home</a><span class="text-white">/</span>
+            <a class="overviews-enlaces" href="/index">Home</a> <span class="text-white">/</span>
             <a class="overviews-enlaces" href="/productos">Productos</a>
             
             
@@ -23,94 +24,116 @@ import OverviewStyles from "../layouts/overview-styles.astro";
         
                 </main>
             </div>
-        </body>
-        </html>
-        <OverviewStyles />
-<script>
-    // En la página de vista previa (overview)
-const mostrarInformacionOverview = document.getElementById('mostrar-informacion-overview');
+			<Subpaginas />
+			<OverviewStyles />
 
-if (mostrarInformacionOverview) {
-  // Obtener el ID del producto y la categoría de la URL
-  const urlParams = new URLSearchParams(window.location.search);
-  const productoId = urlParams.get('id');
-  const categoria = urlParams.get('categoria');
 
-  // Cargar la información del producto correspondiente a la categoría
-  function cargarInformacionProducto() {
-    fetch('/productos.json')
-      .then(response => response.json())
-      .then(productos => {
-        let productosFiltrados = productos;
-        if (categoria) {
-          productosFiltrados = productos.filter(prod => prod.categoria.nombre === categoria);
-        }
-        const producto = productosFiltrados.find(prod => prod.id === productoId);
-        if (producto) {
-          mostrarInformacionOverview.innerHTML = `
-          <h2 class="titulo-sub-paginas">${producto.titulo}</h2>
-          ${producto.imagen.principal}
-          
-            <div id="default-carousel" class=" relative w-full" data-carousel="slide">
-                <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                    <!-- Item 1 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="${producto.imagen.principal}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="${producto.imagen.secundario}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="${producto.imagen.tercero}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                  
-                </div>
-                <!-- Slider indicators -->
-                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                </div>
-                <!-- Slider controls -->
-                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+
+      <script>
+        const mostrarInformacionOverview = document.getElementById('mostrar-informacion-overview');
+      
+        if (mostrarInformacionOverview) {
+          const urlParams = new URLSearchParams(window.location.search);
+          const productoId = urlParams.get('id');
+          const categoria = urlParams.get('categoria');
+      
+          function cargarInformacionProducto() {
+            fetch('/productos.json')
+              .then(response => response.json())
+              .then(productos => {
+                let productosFiltrados = productos;
+                if (categoria) {
+                  productosFiltrados = productos.filter(prod => prod.categoria.nombre === categoria);
+                }
+                const producto = productosFiltrados.find(prod => prod.id === productoId);
+                if (producto) {
+                  mostrarInformacionOverview.innerHTML = `
+                    <h2 class="titulo-sub-paginas text-white">${producto.titulo}</h2>
+                    <div id="indicators-carousel" class="relative w-full p-4" data-carousel="static">
+                      <!-- Carousel wrapper -->
+                      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                        <!-- Item 1 -->
+                        <div class="" data-carousel-item="active">
+                          <img src="${producto.imagen.principal}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="" data-carousel-item>
+                          <img src="${producto.imagen.secundario}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="" data-carousel-item>
+                          <img src="${producto.imagen.tercero}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                      </div>
+                      <!-- Slider indicators -->
+                      <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                      </div>
+                      <!-- Slider controls -->
+                      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                        </svg>
-                        <span class="sr-only">Previous</span>
-                    </span>
-                </button>
-                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                          </svg>
+                          <span class="sr-only">Previous</span>
+                        </span>
+                      </button>
+                      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                        </svg>
-                        <span class="sr-only">Next</span>
-                    </span>
-                </button>
-            </div>
-
-            <p class="parrafo-overview">${producto.detalles['texto-descripcion']}</p>
-        `;
-        
+                          </svg>
+                          <span class="sr-only">Next</span>
+                        </span>
+                      </button>
+                    </div>
+                    <p class="parrafo-overview">${producto.detalles['texto-descripcion']}</p>
+                  `;
+      
+                  // Event listeners for carousel controls
+                  const prev = document.querySelector("[data-carousel-prev]");
+                  const next = document.querySelector("[data-carousel-next]");
+                  const carousel = document.querySelector("[data-carousel='static']");
+                  const items = Array.from(carousel.querySelectorAll("[data-carousel-item]"));
+      
+                  let currentSlide = 0;
+      
+                  function showSlide(index) {
+                    items.forEach(item => item.classList.remove("active"));
+                    items[index].classList.add("active");
+                  }
+      
+                  function goToSlide(index) {
+                    currentSlide = index;
+                    showSlide(currentSlide);
+                  }
+      
+                  function nextSlide() {
+                    currentSlide = (currentSlide + 1) % items.length;
+                    showSlide(currentSlide);
+                  }
+      
+                  function prevSlide() {
+                    currentSlide = (currentSlide - 1 + items.length) % items.length;
+                    showSlide(currentSlide);
+                  }
+      
+                  next.addEventListener("click", nextSlide);
+                  prev.addEventListener("click", prevSlide);
+                } else {
+                  mostrarInformacionOverview.innerHTML = '<p>Producto no encontrado</p>';
+                }
+              })
+              .catch(error => console.error('Error:', error));
+          }
+      
+          cargarInformacionProducto();
         } else {
-          mostrarInformacionOverview.innerHTML = '<p>Producto no encontrado</p>';
+          console.error('Elemento mostrarInformacionOverview no encontrado');
         }
-      })
-      .catch(error => console.error('Error:', error));
-  }
-
-  // Función para cargar la información del producto
-  cargarInformacionProducto();
-} else {
-  console.error('Elemento mostrarInformacionOverview no encontrado');
-}
-
-
-</script>
+    </script>
 <style>
   .overviews-enlaces{
     color: #ffffff;
@@ -120,13 +143,6 @@ if (mostrarInformacionOverview) {
     color: var(--dorado);
     text-decoration: underline;
   }
-  /* Estilo para las imágenes dentro del carousel */
-  .carousel-img {
-        width: 100%; /* Ocupar todo el ancho disponible */
-        height: auto; /* Mantener la proporción de aspecto */
-        object-fit: cover; /* Escalar la imagen para que cubra todo el contenedor */
-        display: block; /* Hacer que la imagen sea un bloque para ajustar correctamente el ancho */
-        margin: 0 auto; /* Centrar horizontalmente */
-    }
 </style>
+
 </Layout>
